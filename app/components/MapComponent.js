@@ -2,7 +2,7 @@ import Globe from "globe.gl";
 import {useEffect, useRef, useState} from "react";
 import {motion} from "framer-motion";
 
-const GlobeComponent = ({cities, currentCity}) => {
+const MapComponent = ({cities, currentCity}) => {
     const globeRef = useRef(null);
     const [selectedCity, setSelectedCity] = useState(currentCity);
 
@@ -116,7 +116,7 @@ const GlobeComponent = ({cities, currentCity}) => {
                                 ))}
                             </ul>
                         </div>
-                        <img src="/images/next.png" alt="back"
+                        <img src="/images/next.png" alt="next"
                              className={'absolute md:w-16 w-10 object-contain md:right-5 right-2 top-1/2 transform -translate-y-1/2 cursor-pointer'}
                              onClick={handleNext}/>
                     </div>
@@ -126,4 +126,4 @@ const GlobeComponent = ({cities, currentCity}) => {
     );
 };
 
-export default GlobeComponent;
+export default MapComponent;
