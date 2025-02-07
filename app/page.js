@@ -56,7 +56,7 @@ export default function Home() {
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{delay: 1.5, duration: 1.5, ease: "easeInOut"}}
-                className="flex md:space-x-4 space-x-2 py-10 justify-center z-20 md:text-xl text-xs whitespace-nowrap flex-wrap">
+                className="flex md:space-x-4 space-x-2 py-10 justify-center items-center z-20 md:text-xl text-xs whitespace-nowrap flex-wrap">
                 <Link href="/cities/Tokyo">
                     <button
                         className="md:p-4 p-2 border border-gray-400 text-white rounded-lg hover:border-2 hover:border-gray-100 transition-all duration-300 ease-in-out">
